@@ -1,0 +1,29 @@
+# ALVIUM 1800 U-2050c, GUID: DEV_1AB22C0023DF
+# Values calibrated using rosrun camera_calibration cameracalibrator.py --size 9x6 --square 0.0495 image:=/alvium/image_raw camera:=/alvium
+
+image_width: 5496
+image_height: 3672
+camera_name: alvium
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [6765.63925,    0.     , 2467.90406,
+            0.     , 6749.79288, 1969.5665 ,
+            0.     ,    0.     ,    1.     ]
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data: [-0.132331, 0.019676, 0.003878, -0.004226, 0.000000]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [1., 0., 0.,
+         0., 1., 0.,
+         0., 0., 1.]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [6600.4834 ,    0.     , 2439.16136,    0.     ,
+            0.     , 6676.97363, 1977.81635,    0.     ,
+            0.     ,    0.     ,    1.     ,    0.     ]
