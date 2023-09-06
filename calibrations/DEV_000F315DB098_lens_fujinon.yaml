@@ -1,0 +1,29 @@
+# Mako G-319C, GUID: DEV_000F315DB098
+# Values calibrated using rosrun camera_calibration cameracalibrator.py --size 9x6 --square 0.0495 image:=/mako/image_raw camera:=/mako
+
+image_width: 2064
+image_height: 1544
+camera_name: mako_optical_link
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [4783.55896,    0.     ,  984.87198,
+            0.     , 4780.966  ,  790.66598,
+            0.     ,    0.     ,    1.     ]
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data: [-0.142068, 0.285735, 0.002107, -0.001984, 0.000000]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [1., 0., 0.,
+         0., 1., 0.,
+         0., 0., 1.]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [4751.53271,    0.     ,  982.51373,    0.     ,
+            0.     , 4760.46729,  791.08026,    0.     ,
+            0.     ,    0.     ,    1.     ,    0.     ]
